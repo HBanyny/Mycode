@@ -29,7 +29,7 @@ df['price_difference'] = df.apply(percentage_difference, axis=1)
 
 #counts of owners
 owner_counts = df['owner'].value_counts()
-#most owners are &st owners
+#most owners are 1st owners
 #drop owner
 df = df.drop('owner', axis=1)
 
@@ -51,7 +51,7 @@ plt.title('Top 10 bike company')
 plt.xlabel('Count')
 # Bajaj pulsar 150 is the most popular
  
-# 
+# correlations
 correlations = df.corr()
 #there is a big correlation between the price_difference and km_driven
 # as well as the selling price and the ex showroom price which makes sense
