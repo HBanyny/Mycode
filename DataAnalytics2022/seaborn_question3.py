@@ -19,7 +19,7 @@ print(food)
 
 #correlation and heatmap
 correlations = food.corr()
-sns.heatmap(correlations, annot=True)
+sns.heatmap(correlations, annot=False)
 #the grocery which price doesn't follow other groceries is sunflowe oil
 
 
